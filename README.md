@@ -1,10 +1,18 @@
-# Findings — Privacy Policy
 
-This repository hosts the privacy policy for the Findings app (iOS & Android).
+# Legal Documents — TMRW Apps
 
-📄 [View Privacy Policy](https://Gunnii-Jin.github.io/FieldFindings/privacy.html)
+This repository hosts privacy policies and terms of use for apps published by Kerri Williams (TMRW).
+
+## Findings
+Nature identification app (plants, mushrooms, animals, insects).
+📄 [Privacy Policy](https://Gunnii-Jin.github.io/findings-privacy/privacy-policy.html)
+📄 [Terms of Use](https://Gunnii-Jin.github.io/findings-privacy/terms-of-use.html)
+
+## Fixation
+BL manhwa/manga recommendation and community app.
+📄 [Privacy Policy](https://Gunnii-Jin.github.io/findings-privacy/fixation-privacy-policy.html)
+📄 [Terms of Use](https://Gunnii-Jin.github.io/findings-privacy/fixation-terms-of-use.html)
 
 ---
 
-Findings is a nature identification app that lets you identify plants, mushrooms, 
-animals, and insects from a photo, and save them to a personal Field Journal.
+For questions about either app's privacy practices, contact: tmrw.pod@gmail.com
