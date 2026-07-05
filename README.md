@@ -5,13 +5,13 @@ This repository hosts privacy policies and terms of use for apps published by Ke
 
 ## Findings
 Nature identification app (plants, mushrooms, animals, insects).
-📄 [Privacy Policy](https://Gunnii-Jin.github.io/findings-privacy/privacy-policy.html)
-📄 [Terms of Use](https://Gunnii-Jin.github.io/findings-privacy/terms-of-use.html)
+📄 [Privacy Policy](https://Gunnii-Jin.github.io/Privacy-Policy/privacyPolicyFieldFindings)
+📄 [Terms of Use](https://Gunnii-Jin.github.io/Privacy-Policy/termsOfServiceFieldFindings.html)
 
 ## Fixation
 BL manhwa/manga recommendation and community app.
-📄 [Privacy Policy](https://Gunnii-Jin.github.io/findings-privacy/fixation-privacy-policy.html)
-📄 [Terms of Use](https://Gunnii-Jin.github.io/findings-privacy/fixation-terms-of-use.html)
+📄 [Privacy Policy](https://Gunnii-Jin.github.io/Privacy-Policy/privacyPolicyFixated.html)
+📄 [Terms of Use](https://Gunnii-Jin.github.io/Privacy-Policy/termsOfServiceFixated.html)
 
 ---
 
