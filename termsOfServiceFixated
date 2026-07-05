@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixation — Terms of Use</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; max-width: 720px; margin: 48px auto; padding: 0 24px; line-height: 1.65; color: #1a1a1a; background: #fdf6f3; }
+    h1 { font-size: 26px; margin-bottom: 4px; color: #6B2B4E; }
+    .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
+    h2 { font-size: 18px; margin-top: 32px; margin-bottom: 10px; color: #6B2B4E; border-bottom: 1px solid #e5d5dd; padding-bottom: 6px; }
+    h3 { font-size: 15px; margin-top: 20px; margin-bottom: 6px; color: #333; }
+    p { margin: 12px 0; }
+    ul { margin: 12px 0; padding-left: 24px; }
+    li { margin: 6px 0; }
+    .caps-notice { font-size: 13.5px; }
+    .toc { background: #fff; border: 1px solid #e5d5dd; border-radius: 8px; padding: 16px 24px; margin: 24px 0; }
+    .toc ol { margin: 4px 0; padding-left: 20px; }
+    .note { font-style: italic; color: #666; background: #fff; border-left: 3px solid #C4673D; padding: 10px 14px; margin: 16px 0; }
+    a { color: #C4673D; }
+    .footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e5d5dd; font-size: 14px; color: #666; }
+  </style>
+</head>
+<body>
+
+  <h1>Terms of Use — Fixation</h1>
+  <p class="updated"><em>Last updated: [insert date you publish this]</em></p>
+
+  <h2>Agreement to Our Legal Terms</h2>
+  <p>We are Kerri Williams ("Company," "we," "us," "our").</p>
+  <p>We operate Fixation, a mobile application for discovering, tracking, and discussing BL (Boys' Love) manhwa and manga, including recommendation features, reading lists, trope-based filtering, and community discussion, as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services").</p>
+  <p>You can contact us by email at tmrw.pod@gmail.com.</p>
+  <p>These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you"), and Kerri Williams, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. <strong>IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.</strong></p>
+  <p>Supplemental terms and conditions or documents that may be posted on the Services from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these Legal Terms at any time and for any reason. We will alert you about any changes by updating the "Last updated" date of these Legal Terms, and you waive any right to receive specific notice of each such change. It is your responsibility to periodically review these Legal Terms to stay informed of updates.</p>
+  <p>We recommend that you print a copy of these Legal Terms for your records.</p>
+
+  <div class="toc">
+    <strong>Table of Contents</strong>
+    <ol>
+      <li>Our Services</li>
+      <li>Intellectual Property Rights</li>
+      <li>User Representations</li>
+      <li>Prohibited Activities</li>
+      <li>User Generated Contributions</li>
+      <li>Contribution License</li>
+      <li>Community Guidelines and Moderation</li>
+      <li>Services Management</li>
+      <li>Term and Termination</li>
+      <li>Modifications and Interruptions</li>
+      <li>Governing Law</li>
+      <li>Dispute Resolution</li>
+      <li>Corrections</li>
+      <li>Disclaimer</li>
+      <li>Limitations of Liability</li>
+      <li>Indemnification</li>
+      <li>User Data</li>
+      <li>Electronic Communications, Transactions, and Signatures</li>
+      <li>Miscellaneous</li>
+      <li>Contact Us</li>
+    </ol>
+  </div>
+
+  <h2>1. Our Services</h2>
+  <p>Fixation helps users discover, track, and discuss BL manhwa and manga through community recommendations, trope-based filtering, personal reading lists, and community discussion features. Fixation does not host, sell, or distribute copyrighted manga or manhwa content. Where Fixation links to external platforms for reading (such as Webtoon, Lezhin, Tappytoon, Manta, or similar services), those platforms are operated independently of Fixation, and your use of them is governed by their own terms, not these Legal Terms.</p>
+  <p>The information provided when using the Services is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation. Accordingly, those persons who choose to access the Services from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable.</p>
+
+  <h2>2. Intellectual Property Rights</h2>
+  <h3>Our intellectual property</h3>
+  <p>We are the owner or the licensee of all intellectual property rights in our Services, including all source code, databases, functionality, software, app designs, audio, video, text, photographs, and graphics in the Services (collectively, the "Content"), as well as the trademarks, service marks, and logos contained therein (the "Marks").</p>
+  <p>Fixation does not claim ownership over any manga, manhwa, artwork, or other copyrighted material created by third-party publishers, authors, or platforms. Cover images, titles, and related information displayed within the Services for identification and recommendation purposes remain the property of their respective rights holders.</p>
+  <p>Our Content and Marks are protected by copyright and trademark laws (and various other intellectual property rights and unfair competition laws) and treaties around the world. The Content and Marks are provided in or through the Services "AS IS" for your personal, non-commercial use only.</p>
+  <h3>Your use of our Services</h3>
+  <p>Subject to your compliance with these Legal Terms, including the "Prohibited Activities" section below, we grant you a non-exclusive, non-transferable, revocable license to:</p>
+  <ul>
+    <li>access the Services; and</li>
+    <li>download or print a copy of any portion of the Content to which you have properly gained access,</li>
+  </ul>
+  <p>solely for your personal, non-commercial use.</p>
+  <p>Except as set out in this section or elsewhere in our Legal Terms, no part of the Services and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.</p>
+  <p>If you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: tmrw.pod@gmail.com.</p>
+  <p>We reserve all rights not expressly granted to you in and to the Services, Content, and Marks. Any breach of these Intellectual Property Rights will constitute a material breach of our Legal Terms and your right to use our Services will terminate immediately.</p>
+
+  <h2>3. User Representations</h2>
+  <p>By using the Services, you represent and warrant that: (1) you have the legal capacity and you agree to comply with these Legal Terms; (2) you are not a minor in the jurisdiction in which you reside; (3) you will not access the Services through automated or non-human means, whether through a bot, script, or otherwise; (4) you will not use the Services for any illegal or unauthorized purpose; and (5) your use of the Services will not violate any applicable law or regulation.</p>
+  <p>If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the Services.</p>
+
+  <h2>4. Prohibited Activities</h2>
+  <p>You may not access or use the Services for any purpose other than that for which we make the Services available. As a user of the Services, you agree not to:</p>
+  <ul>
+    <li>Systematically retrieve data or other content from the Services to create or compile a collection, compilation, database, or directory without written permission from us.</li>
+    <li>Trick, defraud, or mislead us or other users.</li>
+    <li>Circumvent, disable, or otherwise interfere with security-related features of the Services.</li>
+    <li>Disparage, tarnish, or otherwise harm, in our opinion, us and/or the Services.</li>
+    <li>Use any information obtained from the Services to harass, abuse, or harm another person.</li>
+    <li>Post, upload, or share content that is illegal, harassing, hateful, harmful, defamatory, obscene, abusive, discriminatory, threatening, sexually explicit, false, inaccurate, deceitful, or misleading.</li>
+    <li>Post or share content involving or sexualizing minors, in any form, including fictional depictions.</li>
+    <li>Post copyrighted manga, manhwa, or artwork that you do not have the right to share, including scans, screenshots of paywalled content, or links to unauthorized/pirated reading sources.</li>
+    <li>Make improper use of our support channels or submit false reports of abuse or misconduct.</li>
+    <li>Use the Services in a manner inconsistent with any applicable laws or regulations.</li>
+    <li>Upload or transmit viruses, Trojan horses, or other material that interferes with the use, features, functions, operation, or maintenance of the Services.</li>
+    <li>Engage in any automated use of the system, including scripts, data mining, robots, or similar data gathering or extraction tools.</li>
+    <li>Attempt to impersonate another user or person.</li>
+    <li>Interfere with, disrupt, or create an undue burden on the Services.</li>
+    <li>Attempt to bypass any measures of the Services designed to prevent or restrict access.</li>
+    <li>Copy or adapt the Services' software.</li>
+    <li>Except as permitted by applicable law, decipher, decompile, disassemble, or reverse engineer any part of the Services.</li>
+    <li>Use the Services as part of any effort to compete with us or for any revenue-generating endeavor not authorized by us.</li>
+  </ul>
+
+  <h2>5. User Generated Contributions</h2>
+  <p>The Services allow you to create, submit, post, display, or share content and materials, including but not limited to reading lists, ratings, trope tags, discussion comments, and community lists (collectively, "Contributions"). Contributions may be viewable by other users of the Services. When you create or make available any Contributions, you represent and warrant that:</p>
+  <ul>
+    <li>your Contributions do not infringe the intellectual property rights of any third party, including copyright in manga, manhwa, or other creative works;</li>
+    <li>your Contributions do not violate the "Prohibited Activities" section above;</li>
+    <li>your Contributions are not false, misleading, or intended to deceive other users; and</li>
+    <li>you have the necessary rights to share any Contribution you post.</li>
+  </ul>
+
+  <h2>6. Contribution License</h2>
+  <p>You and the Services agree that we may access, store, process, and use any information and Contributions that you provide, in order to operate, display, and improve the Services.</p>
+  <p>By posting a Contribution to any public or community-visible area of the Services (such as a discussion, list, or comment), you grant us a non-exclusive, royalty-free, worldwide license to display and distribute that Contribution within the Services, for as long as you keep it posted or until you delete it or your account.</p>
+  <p>We do not assert ownership over your Contributions. You retain ownership of any reading lists, ratings, or comments you create. We are not liable for any statements or representations made in Contributions posted by other users, and you are solely responsible for your own Contributions.</p>
+  <p>By submitting suggestions or other feedback regarding the Services, you agree that we can use and share such feedback for any purpose without compensation to you.</p>
+
+  <h2>7. Community Guidelines and Moderation</h2>
+  <p>Fixation is built around respectful discussion of BL manhwa and manga. We reserve the right, but not the obligation, to review, moderate, remove, or restrict any Contribution or user account that we determine, in our sole discretion, violates these Legal Terms or is otherwise harmful to the community.</p>
+  <p>We do not pre-screen all user Contributions before they appear on the Services, and we are not responsible for Contributions posted by other users. If you encounter content that violates these Legal Terms, you can report it to us at tmrw.pod@gmail.com.</p>
+  <p>Fixation is intended to help readers discover and discuss officially licensed BL content. Do not use the Services to share, link to, or promote unauthorized or pirated copies of copyrighted manga or manhwa.</p>
+
+  <h2>8. Services Management</h2>
+  <p>We reserve the right, but not the obligation, to: (1) monitor the Services for violations of these Legal Terms; (2) take appropriate legal action against anyone who, in our sole discretion, violates the law or these Legal Terms; (3) in our sole discretion, refuse, restrict, or disable access to any portion of the Services, including removing or disabling any Contribution; and (4) otherwise manage the Services in a manner designed to protect our rights, property, and community.</p>
+
+  <h2>9. Term and Termination</h2>
+  <p>These Legal Terms remain in full force and effect while you use the Services. We reserve the right, in our sole discretion and without notice or liability, to deny access to and use of the Services to any person for any reason, including without limitation for breach of any representation, warranty, or covenant contained in these Legal Terms or of any applicable law or regulation.</p>
+  <p>You may delete your account and all associated data at any time from within the app's Settings. This deletion is permanent and complete.</p>
+  <p>If we terminate or suspend your access for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party.</p>
+
+  <h2>10. Modifications and Interruptions</h2>
+  <p>We reserve the right to change, modify, or remove the contents of the Services at any time or for any reason at our sole discretion without notice. We have no obligation to update any information on our Services and will not be liable to you or any third party for any modification, suspension, or discontinuance of the Services.</p>
+  <p>We cannot guarantee the Services will be available at all times. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Services during any downtime or discontinuance of the Services.</p>
+
+  <h2>11. Governing Law</h2>
+  <p>These Legal Terms shall be governed by and defined following the laws of the State of California, without regard to its conflict of law provisions. Kerri Williams and yourself irrevocably consent that the courts of the State of California shall have exclusive jurisdiction to resolve any dispute which may arise in connection with these Legal Terms.</p>
+
+  <h2>12. Dispute Resolution</h2>
+  <h3>Informal Negotiations</h3>
+  <p>To expedite resolution and control the cost of any dispute, controversy, or claim related to these Legal Terms (each a "Dispute" and collectively, the "Disputes") brought by either you or us, the parties agree to first attempt to negotiate any Dispute informally for at least thirty (30) days before initiating any formal proceeding. Such informal negotiations commence upon written notice from one party to the other.</p>
+  <p>If the parties are unable to resolve a Dispute through informal negotiation, the Dispute may be brought in the courts identified in the Governing Law section above.</p>
+  <p class="note">Note: this Terms document does not include a binding arbitration clause. If you want to require arbitration instead of court proceedings for disputes, that's a more involved legal decision worth discussing with an attorney before adding it.</p>
+
+  <h2>13. Corrections</h2>
+  <p>There may be information on the Services that contains typographical errors, inaccuracies, or omissions, including information about series availability on external platforms. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update information on the Services at any time, without prior notice.</p>
+
+  <h2>14. Disclaimer</h2>
+  <p class="caps-notice">THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SERVICES AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SERVICES' CONTENT, INCLUDING ANY USER-GENERATED CONTRIBUTIONS, RECOMMENDATIONS, OR LINKS TO THIRD-PARTY READING PLATFORMS, AND WE WILL ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT, (2) ANY CONTENT POSTED BY OTHER USERS THAT YOU MAY FIND OBJECTIONABLE OR OFFENSIVE, (3) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY PERSONAL INFORMATION STORED THEREIN, (4) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SERVICES, (5) ANY BUGS, VIRUSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SERVICES BY ANY THIRD PARTY, OR (6) THE CONTENT, PRACTICES, OR AVAILABILITY OF ANY THIRD-PARTY PLATFORM LINKED FROM THE SERVICES. WE DO NOT ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY THIRD-PARTY READING PLATFORM LINKED FROM THE SERVICES.</p>
+
+  <h2>15. Limitations of Liability</h2>
+  <p class="caps-notice">IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SERVICES, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER, AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO THE LESSER OF THE AMOUNT PAID, IF ANY, BY YOU TO US IN THE TWELVE (12) MONTHS PRIOR TO THE CLAIM, OR ONE HUNDRED U.S. DOLLARS ($100). CERTAIN US STATE LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.</p>
+
+  <h2>16. Indemnification</h2>
+  <p>You agree to defend, indemnify, and hold us harmless, including our agents and any future employees or partners, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys' fees, made by any third party due to or arising out of: (1) your use of the Services; (2) your breach of these Legal Terms; (3) any breach of your representations and warranties set forth in these Legal Terms; (4) your violation of the rights of a third party, including intellectual property rights in any Contribution you post; or (5) any overt harmful act toward any other user of the Services.</p>
+
+  <h2>17. User Data</h2>
+  <p>We will maintain certain data that you transmit to the Services, including your reading lists, preferences, and any community Contributions, for the purpose of operating the Services. Although we perform reasonable routine backups of data, you are solely responsible for all data that you transmit through the Services. You agree that we shall have no liability to you for any loss or corruption of such data, except as required by applicable law.</p>
+  <p>You may export a copy of your data or permanently delete all of your data at any time from within the app's Settings.</p>
+
+  <h2>18. Electronic Communications, Transactions, and Signatures</h2>
+  <p>Visiting the Services, sending us emails, and completing in-app actions constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically satisfy any legal requirement that such communication be in writing.</p>
+
+  <h2>19. Miscellaneous</h2>
+  <p>These Legal Terms and any policies or operating rules posted by us in respect to the Services constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Legal Terms shall not operate as a waiver of such right or provision. These Legal Terms operate to the fullest extent permissible by law. If any provision of these Legal Terms is determined to be unlawful, void, or unenforceable, that provision is deemed severable from these Legal Terms and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment, or agency relationship created between you and us as a result of these Legal Terms or use of the Services.</p>
+
+  <h2>20. Contact Us</h2>
+  <p>In order to resolve a complaint regarding the Services, to report content that violates these Legal Terms, or to receive further information regarding use of the Services, please contact us at:</p>
+
+  <div class="footer">
+    <p><strong>Kerri Williams</strong><br>tmrw.pod@gmail.com</p>
+  </div>
+
+</body>
+</html>
