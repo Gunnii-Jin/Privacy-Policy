@@ -13,6 +13,11 @@ BL manhwa/manga recommendation and community app.
 📄 [Privacy Policy](https://Gunnii-Jin.github.io/Privacy-Policy/privacyPolicyFixated.html)
 📄 [Terms of Use](https://Gunnii-Jin.github.io/Privacy-Policy/termsOfServiceFixated.html)
 
+## CyberReady
+Cybersecurity education and CompTIA Security+ exam prep app.
+📄 [Privacy Policy](https://Gunnii-Jin.github.io/Privacy-Policy/privacyPolicyCyberReady.html)
+📄 [Terms of Use](https://Gunnii-Jin.github.io/Privacy-Policy/termsOfServiceCyberReady.html)
+
 ---
 
-For questions about either app's privacy practices, contact: tmrw.pod@gmail.com
+For questions about any of these apps' privacy practices, contact: tmrw.pod@gmail.com
