@@ -18,6 +18,11 @@ Cybersecurity education and CompTIA Security+ exam prep app.
 📄 [Privacy Policy](https://Gunnii-Jin.github.io/Privacy-Policy/privacyPolicyCyberReady.html)
 📄 [Terms of Use](https://Gunnii-Jin.github.io/Privacy-Policy/termsOfServiceCyberReady.html)
 
+## Budding
+Gentle wellness and planting app (meal plans, movement, planting, recipes, mood check-ins, gratitude).
+📄 [Privacy Policy](https://Gunnii-Jin.github.io/Privacy-Policy/privacyPolicyBudding.html)
+📄 [Terms of Use](https://Gunnii-Jin.github.io/Privacy-Policy/termsOfServiceBudding.html)
+
 ---
 
 For questions about any of these apps' privacy practices, contact: tmrw.pod@gmail.com
