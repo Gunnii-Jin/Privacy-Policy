@@ -25,11 +25,11 @@
 <body>
 <div class="wrap">
   <h1>Privacy Policy &mdash; Budding</h1>
-  <p class="sub">Last updated: August 21, 2026</p>
+  <p class="sub">Last updated: October 16, 2026</p>
 
   <div class="tldr">
     <strong>The short version</strong>
-    Budding is a gentle wellness and planting companion. To sync your entries across your devices and household, Budding uses an account and a secure cloud backend. We collect only what the app needs, we never sell your data (including your wellness data), and when you delete your account it is erased immediately and permanently. Photos you submit (plant, receipt, or pantry) are sent to a third-party AI service to generate results.
+    Budding is a gentle wellness and planting companion. To sync your entries across your devices and household, Budding uses an account and a secure cloud backend. We collect only what the app needs, we never sell your data (including your wellness data), and when you delete your account it is erased immediately and permanently. AI features are off until you agree: once you do, what you submit to them (a photo, your pantry, or what you wrote) is sent to a third-party AI service to generate your result. You can turn this off anytime in Settings.
   </div>
 
   <h2>Who we are</h2>
@@ -41,7 +41,9 @@
   <h3>Content you create</h3>
   <p>We store the content you add so it syncs and stays available to you (and to household members you invite): mood check-ins, gratitude entries and other wellness entries, meal plans, notes, planting and journal data, task completion, and household information.</p>
   <h3>Photos you submit</h3>
-  <p>Budding includes scanning and diagnosis features, so you can submit photos &mdash; for example, plant photos for diagnosis, and receipt or pantry photos for scanning. Photos you choose to keep are stored in your account in access-controlled cloud storage, and are sent to our AI provider to generate results (see AI features below).</p>
+  <p>Budding includes scanning and diagnosis features, so you can submit photos &mdash; for example, plant photos for diagnosis, and receipt or pantry photos for scanning. Photos are resized on your phone before upload. Scan and diagnosis photos are sent to our AI provider to generate a result and are not kept. A photo you add to a plant is stored so it can be shown in the app (see How we store and protect your data).</p>
+  <h3>Location you choose to give</h3>
+  <p>If you enter a ZIP code, we store it and use it to find your USDA plant hardiness zone for the seasonal planting guide. We don't collect your device's location.</p>
   <h3>Subscription information</h3>
   <p>Budding subscriptions are managed by RevenueCat, which collects purchase history, a device identifier, and platform receipt data to keep your subscription status in sync.</p>
   <h3>Notification and device information</h3>
@@ -51,7 +53,7 @@
   <ul>
     <li><strong>To provide the app and its features</strong> &mdash; account creation, syncing, meal plans, wellness tracking, plant diagnosis, and receipt/pantry scanning (legal basis: performance of our contract with you).</li>
     <li><strong>To process subscriptions</strong> (performance of a contract).</li>
-    <li><strong>To run AI features</strong> when you submit a photo or request (performance of a contract, and your consent in submitting the content).</li>
+    <li><strong>To run AI features</strong> you turn on and use (your consent, which you can withdraw in Settings &rarr; Privacy &rarr; AI features).</li>
     <li><strong>To keep the app secure, prevent abuse, and fix problems</strong> (our legitimate interests).</li>
     <li><strong>To send notifications</strong> you enable (your consent).</li>
     <li><strong>Sensitive wellness data</strong> (mood, gratitude, and wellness entries) is processed only to provide the features you use, on the basis of your consent.</li>
@@ -61,10 +63,10 @@
   <p>Mood check-ins, gratitude entries, and other wellness data are personal and sensitive. <strong>We do not sell this data, and we do not use it for advertising.</strong> It is used only to provide the features you choose to use, and it is protected with the safeguards described below. Budding is <strong>not a medical device</strong>, and nothing in the app is medical advice.</p>
 
   <h2>AI features</h2>
-  <p>Budding uses AI to power features such as plant diagnosis, receipt scanning, pantry photo scanning, and recipe suggestions. When you use one of these features, the photo or text you submit is sent to our third-party AI provider, <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener">OpenRouter</a>, which routes the request to Google's Gemini 2.0 Flash model, solely to generate your result. AI-generated content is for informational purposes only and is <strong>not professional advice</strong>. We do not use your submissions to train our own models, and the AI provider processes them only to fulfill your request under its own policy. Photos you choose to keep are stored in your account until you delete them or your account.</p>
+  <p>Budding uses AI for plant diagnosis, receipt and pantry scanning, adding pantry items by voice (only the text of what you said, not audio), recipe and meal-plan suggestions, reflections on journal entries, written summaries of your mood patterns, mood-based recipe ideas, and the monthly review. <strong>AI features are off until you agree</strong> in the app, and you can turn them off at any time in <strong>Settings &rarr; Privacy &rarr; AI features</strong>. When they're on and you use one, the content it needs (for example a photo, your pantry list, a journal entry, or your recent mood check-ins) is sent to our third-party AI provider, <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener">OpenRouter</a>, which routes the request to Google's Gemini 2.5 Flash model, solely to generate your result. Voice input is transcribed by your iPhone's built-in speech recognition; Budding never receives or stores audio. AI-generated content is for informational purposes only and is <strong>not professional advice</strong>. We do not use your submissions to train our own models, and the AI provider processes them only to fulfill your request under its own policy. Photos you choose to keep are stored in your account until you delete them or your account.</p>
 
   <h2>How we store and protect your data</h2>
-  <p>Your data is transmitted over encrypted connections (TLS/HTTPS). Budding's backend runs on Cloudflare's serverless platform; your account data and content are stored in a managed Postgres database (Neon), and photos and files you upload are stored in access-controlled cloud storage (Cloudflare R2, using private, signed-URL access). Access is limited to what is necessary to operate the app, and data is encrypted at rest. No method of transmission or storage is 100% secure, but we take reasonable measures to protect your information. If a breach affects your personal data, we will notify you and the relevant regulators as required by law.</p>
+  <p>Your data is transmitted over encrypted connections (TLS/HTTPS). Budding's backend runs on Vercel's serverless platform; your account data and content are stored in a managed Postgres database (Neon), and plant photos you add are stored in Vercel Blob storage. Each photo is stored at a long, randomly generated web address that isn't listed or discoverable, but anyone who obtained that exact address could view the image, so please don't photograph documents or other personal information for your plants. Access is limited to what is necessary to operate the app, and data is encrypted at rest. No method of transmission or storage is 100% secure, but we take reasonable measures to protect your information. If a breach affects your personal data, we will notify you and the relevant regulators as required by law.</p>
 
   <h2>How long we keep it</h2>
   <p>We keep your personal data for as long as your account is active. When you delete your account from <strong>Settings &rarr; Delete Account</strong>, your data is <strong>permanently and immediately deleted</strong> from our systems in a single operation &mdash; there is no grace period and no way to recover it afterward. We may retain limited records only where required to comply with legal, tax, or accounting obligations.</p>
@@ -73,9 +75,10 @@
   <p>We do <strong>not</strong> sell your personal information. We share data only with the service providers that make the app work, and only as needed:</p>
   <ul>
     <li><strong>RevenueCat</strong> &mdash; subscription management (<a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">privacy policy</a>).</li>
-    <li><strong>OpenRouter</strong> (routing to Google Gemini) &mdash; AI plant diagnosis, receipt/pantry scanning, and recipe suggestions (<a href="https://openrouter.ai/privacy" target="_blank" rel="noopener">privacy policy</a>).</li>
+    <li><strong>OpenRouter</strong> (routing to Google Gemini) &mdash; the AI features listed above, only after you turn them on (<a href="https://openrouter.ai/privacy" target="_blank" rel="noopener">privacy policy</a>).</li>
     <li><strong>OneSignal</strong> &mdash; push notifications (<a href="https://onesignal.com/privacy" target="_blank" rel="noopener">privacy policy</a>).</li>
-    <li><strong>Cloudflare</strong> (serverless compute and file storage) and <strong>Neon</strong> (managed Postgres database) &mdash; they store and process data on our behalf to run the app.</li>
+    <li><strong>Vercel</strong> (serverless compute and photo storage) and <strong>Neon</strong> (managed Postgres database) &mdash; they store and process data on our behalf to run the app.</li>
+    <li><strong>phzmapi.org</strong> &mdash; a public USDA hardiness-zone lookup. When you save a ZIP code, only the ZIP code is sent to it to find your growing zone.</li>
     <li><strong>Apple</strong> and <strong>Google</strong> &mdash; for sign-in and for in-app purchases through their app stores.</li>
   </ul>
   <p>We may also disclose information if required by law, or to protect our rights and the safety of our users.</p>
@@ -89,8 +92,11 @@
   <h3>If you are in California (CCPA/CPRA)</h3>
   <p>In the past 12 months we may have collected these categories of personal information: identifiers (name, email, device and push identifiers), account information, your user content (including sensitive wellness data and photos), commercial information (subscription status), and device and usage data. <strong>We do not sell your personal information, and we do not share it for cross-context behavioral advertising.</strong> You have the right to know what we collect, to request deletion, to request correction, and to limit the use of sensitive personal information. We honor opt-out preference signals such as Global Privacy Control (GPC). We will not discriminate against you for exercising any of these rights.</p>
 
+  <h3>Consumer health data (Washington, Nevada, Connecticut, and similar laws)</h3>
+  <p>Some information in Budding can be consumer health data under state laws such as Washington's My Health My Data Act: your mood check-ins, journal entries, gratitude entries, habits and movement logs, and wellness goals. We collect it only from you, as you enter it, to provide the features you use. We share it only with the service providers that run the app on our behalf (Vercel and Neon for hosting), and with our AI provider only for the features you turn on. We do not sell consumer health data, and we do not use it for advertising. You can see this data in the app, export it, withdraw your AI consent, and delete it at any time (see below), or email <a href="mailto:tmrw.pod@gmail.com">tmrw.pod@gmail.com</a>.</p>
+
   <h2>How to delete your data</h2>
-  <p>You can delete your account and its associated data at any time from <strong>Settings &rarr; Delete Account</strong> in the app, which calls our account-deletion endpoint (<code>DELETE /api/account</code>) and permanently and immediately removes your account and associated data from our systems. You can also email <a href="mailto:tmrw.pod@gmail.com">tmrw.pod@gmail.com</a> to request deletion.</p>
+  <p>You can delete your account and its associated data at any time from <strong>Settings &rarr; Delete Account</strong> in the app, which calls our account-deletion endpoint (<code>DELETE /api/account</code>) and permanently and immediately removes your account and associated data from our systems, including plant photos in storage. If you share a household, the shared lists you added to (pantry, shopping, tasks, calendar) stay with the remaining members, without your name or account attached. You can also email <a href="mailto:tmrw.pod@gmail.com">tmrw.pod@gmail.com</a> to request deletion.</p>
 
   <h2>Household sharing</h2>
   <p>If you use household sharing, the entries and information you share become visible to the household members you invite. You are responsible for who you invite; you can manage or remove members in the app.</p>
