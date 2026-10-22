@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixated Creator Program</title>
+  <meta name="description" content="Fixated is building a creator program for indie and new BL artists. Join the waitlist.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #120A14; --surface: #1E0F22; --border: rgba(169, 143, 203, 0.22);
+      --text: #F5EEF8; --text-2: #C4A8D4; --text-3: #7A5A8A;
+      --gold: #C8A96A; --rose: #C97C9E;
+    }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: Inter, -apple-system, "Segoe UI", sans-serif; line-height: 1.6; }
+    main { max-width: 640px; margin: 0 auto; padding: 40px 16px 64px; }
+    .langs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+    .langs button { font: 500 14px Inter, sans-serif; color: var(--text-3); background: transparent; border: 1px solid var(--border); border-radius: 4px; padding: 6px 12px; cursor: pointer; }
+    .langs button[aria-pressed="true"] { color: var(--text); border-color: var(--gold); background: rgba(200, 169, 106, 0.12); }
+    .kicker { font-size: 12px; font-weight: 500; letter-spacing: 2px; color: var(--gold); margin: 0; }
+    h1 { font-family: "Cormorant Garamond", serif; font-weight: 700; font-size: clamp(32px, 7vw, 44px); line-height: 1.1; margin: 8px 0 20px; }
+    .rule { width: 110px; height: 1px; background: var(--gold); opacity: 0.6; margin-bottom: 24px; }
+    p { color: var(--text-2); margin: 0 0 16px; }
+    .note { border-left: 2px solid var(--gold); padding-left: 12px; margin-bottom: 20px; }
+    .note strong { display: block; color: var(--gold); font-size: 14px; }
+    .note p { font-style: italic; font-size: 15px; margin: 4px 0 0; }
+    .waitlist { background: var(--surface); border: 1px solid rgba(200, 169, 106, 0.25); border-radius: 6px; padding: 14px 16px; color: var(--text); margin-bottom: 28px; }
+    form { display: grid; gap: 16px; }
+    label { display: grid; gap: 6px; font-size: 13px; font-weight: 600; letter-spacing: 1px; color: var(--text-3); }
+    input, textarea { font: 400 16px Inter, sans-serif; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 12px 14px; width: 100%; }
+    textarea { min-height: 80px; resize: vertical; }
+    input:focus, textarea:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+    .consent { display: flex; gap: 10px; align-items: flex-start; font-size: 15px; font-weight: 400; letter-spacing: 0; color: var(--text-2); }
+    .consent input { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--gold); flex: none; }
+    .trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+    button.submit { font: 600 16px Inter, sans-serif; color: #fff; background: var(--rose); border: 0; border-radius: 6px; padding: 15px; cursor: pointer; }
+    button.submit:disabled { opacity: 0.6; cursor: default; }
+    .error { color: var(--rose); font-weight: 500; margin: 0; min-height: 1em; }
+    .privacy { font-size: 13px; color: var(--text-3); }
+    .done { text-align: center; padding: 24px 0; }
+    .done h2 { font-family: "Cormorant Garamond", serif; font-size: 30px; margin: 0 0 8px; }
+    footer { margin-top: 48px; font-size: 13px; color: var(--text-3); }
+    footer a { color: var(--text-2); }
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="langs" id="langs" aria-label="Language"></nav>
+    <p class="kicker" data-t="kicker"></p>
+    <h1 data-t="heading"></h1>
+    <div class="rule"></div>
+    <div class="note" id="note" hidden><strong data-t="noteLabel"></strong><p data-t="disclaimer"></p></div>
+    <p data-t="intro"></p>
+    <p data-t="aims"></p>
+    <div class="waitlist" data-t="waitlist"></div>
+
+    <form id="form" novalidate>
+      <label><span data-t="name"></span><input name="name" maxlength="100" autocomplete="name"></label>
+      <label><span data-t="handle"></span><input name="handle" maxlength="300" autocapitalize="none"></label>
+      <label><span data-t="country"></span><input name="country" maxlength="100" autocomplete="country-name"></label>
+      <label><span data-t="language"></span><input name="language" maxlength="100"></label>
+      <label><span data-t="email"></span><input name="email" type="email" maxlength="254" autocomplete="email" autocapitalize="none"></label>
+      <label id="noteField"><span data-t="translationNote"></span><textarea name="translation_note" maxlength="1000"></textarea></label>
+      <div class="trap" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div>
+      <label class="consent"><input type="checkbox" name="consent"><span data-t="consent"></span></label>
+      <p class="error" id="error" role="alert"></p>
+      <button class="submit" type="submit" data-t="submit"></button>
+      <p class="privacy" data-t="privacy"></p>
+    </form>
+    <div class="done" id="done" hidden><h2 data-t="successTitle"></h2><p data-t="successBody"></p></div>
+
+    <footer>Fixated · <a href="privacy.html">Privacy Policy</a></footer>
+  </main>
+  <script>
+    const COPY = {"order":["en","ko","ja","zh-Hant","es","th","pt-BR","id"],"languages":{"en":{"languageName":"English","reviewed":true,"title":"For creators","kicker":"CREATOR PROGRAM · WAITLIST","heading":"A home for indie BL artists, in the making","intro":"Fixated is building a creator program for indie and new BL artists, wherever they are.","aims":"What we're aiming for: fair pay, and creators keeping the rights to their own work.","waitlist":"This is a waitlist. Nothing is published on Fixated yet, and Fixated does not host comics today. Joining only means we'll email you when the program is ready.","noteLabel":"About this translation","disclaimer":"","name":"Name or pen name","handle":"Handle or portfolio link","country":"Country","language":"Language(s) you create in","email":"Email","consent":"Fixated can email me about the creator program, and nothing else.","translationNote":"Spot a translation mistake? Tell us here (optional)","submit":"Join the waitlist","sending":"Sending...","successTitle":"You're on the waitlist","successBody":"Thank you. We'll email you when there's real news about the program.","errorFields":"Please fill in every field.","errorEmail":"Please enter a valid email.","errorConsent":"Please tick the box so we can email you.","errorGeneric":"Something went wrong. Please try again.","privacy":"We only use this to contact you about the creator program. To have it deleted, email tmrw.pod@gmail.com."},"ko":{"languageName":"한국어","reviewed":false,"title":"크리에이터를 위해","kicker":"크리에이터 프로그램 · 대기자 명단","heading":"인디 BL 작가를 위한 공간을 준비하고 있어요","intro":"Fixated는 어디에 계시든 인디 및 신인 BL 작가를 위한 크리에이터 프로그램을 만들고 있습니다.","aims":"저희의 목표는 공정한 보상, 그리고 작가가 자신의 작품에 대한 권리를 지키는 것입니다.","waitlist":"이것은 대기자 명단입니다. Fixated에는 아직 아무 작품도 게재되지 않았으며, 현재 Fixated는 만화를 호스팅하지 않습니다. 등록하시면 프로그램이 준비되었을 때 이메일로 알려드리는 것뿐입니다.","noteLabel":"번역에 대해","disclaimer":"저는 한국어 원어민이 아닙니다. 어디에 계신 작가분이든 환영받는다고 느끼셨으면 해서 이 페이지를 직접 번역했습니다. 아직 검토 중이라 어색한 부분이 있을 수 있어요. 이상한 표현이 있다면 아래 양식으로 알려주세요. 바로 고치겠습니다.","name":"이름 또는 필명","handle":"계정 또는 포트폴리오 링크","country":"국가","language":"작업하는 언어","email":"이메일","consent":"Fixated가 크리에이터 프로그램에 관한 이메일만 보내는 것에 동의합니다.","translationNote":"번역 오류를 발견하셨나요? 여기에 알려주세요 (선택)","submit":"대기자 명단에 등록하기","sending":"보내는 중...","successTitle":"대기자 명단에 등록되었어요","successBody":"감사합니다. 프로그램에 대한 실제 소식이 생기면 이메일로 알려드릴게요.","errorFields":"모든 항목을 입력해 주세요.","errorEmail":"올바른 이메일을 입력해 주세요.","errorConsent":"이메일을 받으시려면 체크해 주세요.","errorGeneric":"문제가 발생했어요. 다시 시도해 주세요.","privacy":"이 정보는 크리에이터 프로그램 관련 연락에만 사용합니다. 삭제를 원하시면 tmrw.pod@gmail.com으로 이메일을 보내주세요."},"ja":{"languageName":"日本語","reviewed":false,"title":"クリエイターの方へ","kicker":"クリエイタープログラム・ウェイトリスト","heading":"インディーBL作家のための場所を準備中です","intro":"Fixatedは、世界中のインディー・新人BL作家のためのクリエイタープログラムを作っています。","aims":"目指しているのは、公正な報酬と、作家が自分の作品の権利を持ち続けられることです。","waitlist":"これはウェイトリストです。Fixatedではまだ何も公開されておらず、現在Fixatedは漫画を掲載していません。登録いただくと、プログラムの準備ができたときにメールでお知らせします。","noteLabel":"この翻訳について","disclaimer":"私は日本語のネイティブスピーカーではありません。どこにいる作家さんにも歓迎されていると感じてほしくて、このページを自分で翻訳しました。現在確認中のため、間違いがあるかもしれません。おかしな表現があれば、下のフォームで教えてください。すぐに直します。","name":"お名前またはペンネーム","handle":"アカウントまたはポートフォリオのリンク","country":"国","language":"制作に使う言語","email":"メールアドレス","consent":"Fixatedからクリエイタープログラムに関するメールのみを受け取ることに同意します。","translationNote":"翻訳の間違いを見つけましたか?こちらで教えてください(任意)","submit":"ウェイトリストに登録する","sending":"送信中...","successTitle":"ウェイトリストに登録されました","successBody":"ありがとうございます。プログラムについて具体的なお知らせができたら、メールでご連絡します。","errorFields":"すべての項目を入力してください。","errorEmail":"有効なメールアドレスを入力してください。","errorConsent":"メールを受け取るには、チェックを入れてください。","errorGeneric":"エラーが発生しました。もう一度お試しください。","privacy":"この情報はクリエイタープログラムに関するご連絡にのみ使用します。削除をご希望の場合は tmrw.pod@gmail.com までメールしてください。"},"zh-Hant":{"languageName":"繁體中文","reviewed":false,"title":"給創作者","kicker":"創作者計畫・候補名單","heading":"為獨立 BL 作者打造的空間,正在籌備中","intro":"Fixated 正在為世界各地的獨立與新人 BL 作者建立創作者計畫。","aims":"我們的目標是:合理的報酬,以及創作者保有自己作品的權利。","waitlist":"這是候補名單。Fixated 目前尚未刊登任何作品,現在也不提供漫畫閱讀。加入名單只代表計畫準備好時,我們會寄信通知你。","noteLabel":"關於這份翻譯","disclaimer":"我的母語不是中文。我親自翻譯了這個頁面,因為我希望每個地方的作者都能感到被歡迎。這份翻譯還在審核中,可能會有錯誤。如果有哪裡讀起來怪怪的,請在下方表單告訴我,我會修正。","name":"名字或筆名","handle":"帳號或作品集連結","country":"國家/地區","language":"創作使用的語言","email":"電子郵件","consent":"我同意 Fixated 只寄送與創作者計畫有關的電子郵件給我。","translationNote":"發現翻譯錯誤嗎?請在這裡告訴我們(選填)","submit":"加入候補名單","sending":"傳送中...","successTitle":"你已加入候補名單","successBody":"謝謝你。計畫有確切消息時,我們會寄信通知你。","errorFields":"請填寫所有欄位。","errorEmail":"請輸入有效的電子郵件。","errorConsent":"請勾選同意,我們才能寄信給你。","errorGeneric":"發生錯誤,請再試一次。","privacy":"這些資料只用於聯絡你關於創作者計畫的事。如需刪除,請寄信至 tmrw.pod@gmail.com。"},"es":{"languageName":"Español","reviewed":false,"title":"Para creadores","kicker":"PROGRAMA DE CREADORES · LISTA DE ESPERA","heading":"Un hogar para artistas BL independientes, en construcción","intro":"Fixated está creando un programa para artistas BL independientes y nuevos, estén donde estén.","aims":"Lo que buscamos: un pago justo y que los creadores conserven los derechos de su propia obra.","waitlist":"Esto es una lista de espera. Todavía no hay nada publicado en Fixated, y hoy Fixated no aloja cómics. Unirte solo significa que te escribiremos cuando el programa esté listo.","noteLabel":"Sobre esta traducción","disclaimer":"El español no es mi lengua materna. Traduje esta página por mi cuenta porque quiero que artistas de todas partes se sientan bienvenidos aquí. Todavía se está revisando, así que puede haber errores. Si algo suena raro, dímelo en el formulario de abajo y lo corrijo.","name":"Nombre o seudónimo","handle":"Usuario o enlace a tu portafolio","country":"País","language":"Idioma(s) en que creas","email":"Correo electrónico","consent":"Acepto que Fixated me escriba solo sobre el programa de creadores.","translationNote":"¿Viste un error de traducción? Cuéntanos aquí (opcional)","submit":"Unirme a la lista de espera","sending":"Enviando...","successTitle":"Estás en la lista de espera","successBody":"Gracias. Te escribiremos cuando haya noticias reales sobre el programa.","errorFields":"Por favor, completa todos los campos.","errorEmail":"Por favor, escribe un correo válido.","errorConsent":"Marca la casilla para que podamos escribirte.","errorGeneric":"Algo salió mal. Inténtalo de nuevo.","privacy":"Solo usamos esto para contactarte sobre el programa de creadores. Para borrarlo, escribe a tmrw.pod@gmail.com."},"th":{"languageName":"ไทย","reviewed":false,"title":"สำหรับครีเอเตอร์","kicker":"โปรแกรมครีเอเตอร์ · รายชื่อรอ","heading":"พื้นที่สำหรับนักวาด BL อิสระ กำลังอยู่ระหว่างการสร้าง","intro":"Fixated กำลังสร้างโปรแกรมครีเอเตอร์สำหรับนักวาด BL อิสระและนักวาดหน้าใหม่ ไม่ว่าคุณจะอยู่ที่ไหน","aims":"สิ่งที่เราตั้งใจไว้คือ ค่าตอบแทนที่เป็นธรรม และให้ครีเอเตอร์ยังคงเป็นเจ้าของสิทธิ์ในผลงานของตัวเอง","waitlist":"นี่คือรายชื่อรอ ตอนนี้ยังไม่มีผลงานใดเผยแพร่บน Fixated และปัจจุบัน Fixated ไม่ได้ให้บริการอ่านการ์ตูน การลงชื่อหมายความเพียงว่าเราจะส่งอีเมลแจ้งคุณเมื่อโปรแกรมพร้อม","noteLabel":"เกี่ยวกับคำแปลนี้","disclaimer":"ภาษาไทยไม่ใช่ภาษาแม่ของผู้แปล หน้านี้แปลโดยผู้ก่อตั้ง Fixated เอง เพราะอยากให้นักวาดจากทุกที่รู้สึกว่าได้รับการต้อนรับ ขณะนี้กำลังตรวจทานอยู่ จึงอาจมีข้อผิดพลาด หากตรงไหนอ่านแล้วแปลก ๆ บอกเราได้ในแบบฟอร์มด้านล่าง แล้วเราจะแก้ไขให้","name":"ชื่อหรือนามปากกา","handle":"ชื่อบัญชีหรือลิงก์ผลงาน","country":"ประเทศ","language":"ภาษาที่ใช้สร้างผลงาน","email":"อีเมล","consent":"ยินยอมให้ Fixated ส่งอีเมลเกี่ยวกับโปรแกรมครีเอเตอร์เท่านั้น","translationNote":"เจอคำแปลผิดไหม? บอกเราได้ที่นี่ (ไม่บังคับ)","submit":"ลงชื่อในรายชื่อรอ","sending":"กำลังส่ง...","successTitle":"คุณอยู่ในรายชื่อรอแล้ว","successBody":"ขอบคุณ เราจะส่งอีเมลแจ้งเมื่อมีข่าวคืบหน้าของโปรแกรม","errorFields":"กรุณากรอกข้อมูลให้ครบทุกช่อง","errorEmail":"กรุณากรอกอีเมลที่ถูกต้อง","errorConsent":"กรุณาติ๊กช่องยินยอมเพื่อให้เราส่งอีเมลถึงคุณได้","errorGeneric":"เกิดข้อผิดพลาด กรุณาลองอีกครั้ง","privacy":"เราใช้ข้อมูลนี้เพื่อติดต่อคุณเรื่องโปรแกรมครีเอเตอร์เท่านั้น หากต้องการให้ลบ ส่งอีเมลมาที่ tmrw.pod@gmail.com"},"pt-BR":{"languageName":"Português (Brasil)","reviewed":false,"title":"Para criadores","kicker":"PROGRAMA DE CRIADORES · LISTA DE ESPERA","heading":"Um lugar para artistas BL independentes, em construção","intro":"O Fixated está criando um programa para artistas BL independentes e iniciantes, de qualquer lugar do mundo.","aims":"O que buscamos: pagamento justo e que os criadores mantenham os direitos sobre o próprio trabalho.","waitlist":"Isto é uma lista de espera. Ainda não há nada publicado no Fixated, e hoje o Fixated não hospeda quadrinhos. Entrar na lista só significa que vamos te mandar um e-mail quando o programa estiver pronto.","noteLabel":"Sobre esta tradução","disclaimer":"Português não é minha língua nativa. Traduzi esta página por conta própria porque quero que artistas de todo lugar se sintam bem-vindos aqui. A tradução ainda está sendo revisada, então pode ter erros. Se algo soar estranho, me conte no formulário abaixo que eu corrijo.","name":"Nome ou nome artístico","handle":"Perfil ou link do portfólio","country":"País","language":"Idioma(s) em que você cria","email":"E-mail","consent":"Aceito receber e-mails do Fixated apenas sobre o programa de criadores.","translationNote":"Viu algum erro de tradução? Conte aqui (opcional)","submit":"Entrar na lista de espera","sending":"Enviando...","successTitle":"Você está na lista de espera","successBody":"Obrigado! Vamos te mandar um e-mail quando houver novidades reais sobre o programa.","errorFields":"Preencha todos os campos.","errorEmail":"Digite um e-mail válido.","errorConsent":"Marque a caixa para podermos te enviar e-mails.","errorGeneric":"Algo deu errado. Tente novamente.","privacy":"Usamos isso só para falar com você sobre o programa de criadores. Para apagar seus dados, escreva para tmrw.pod@gmail.com."},"id":{"languageName":"Bahasa Indonesia","reviewed":false,"title":"Untuk kreator","kicker":"PROGRAM KREATOR · DAFTAR TUNGGU","heading":"Rumah bagi seniman BL indie, sedang dibangun","intro":"Fixated sedang membangun program kreator untuk seniman BL indie dan pendatang baru, di mana pun mereka berada.","aims":"Tujuan kami: bayaran yang adil, dan kreator tetap memegang hak atas karya mereka sendiri.","waitlist":"Ini adalah daftar tunggu. Belum ada karya yang diterbitkan di Fixated, dan saat ini Fixated tidak menayangkan komik. Mendaftar hanya berarti kami akan mengirim email saat program sudah siap.","noteLabel":"Tentang terjemahan ini","disclaimer":"Bahasa Indonesia bukan bahasa ibu saya. Saya menerjemahkan halaman ini sendiri karena saya ingin seniman dari mana pun merasa disambut di sini. Terjemahan ini masih ditinjau, jadi mungkin ada kesalahan. Kalau ada yang terdengar aneh, beri tahu saya lewat formulir di bawah dan saya akan memperbaikinya.","name":"Nama atau nama pena","handle":"Akun atau tautan portofolio","country":"Negara","language":"Bahasa yang kamu gunakan untuk berkarya","email":"Email","consent":"Saya setuju Fixated mengirim email kepada saya hanya tentang program kreator.","translationNote":"Menemukan kesalahan terjemahan? Beri tahu kami di sini (opsional)","submit":"Gabung daftar tunggu","sending":"Mengirim...","successTitle":"Kamu sudah masuk daftar tunggu","successBody":"Terima kasih. Kami akan mengirim email saat ada kabar nyata tentang program ini.","errorFields":"Mohon isi semua kolom.","errorEmail":"Mohon masukkan email yang valid.","errorConsent":"Centang kotak ini agar kami bisa mengirim email kepadamu.","errorGeneric":"Terjadi kesalahan. Silakan coba lagi.","privacy":"Kami hanya menggunakan data ini untuk menghubungimu tentang program kreator. Untuk menghapusnya, kirim email ke tmrw.pod@gmail.com."}}};
+    const API = "https://fixated-backend.vercel.app/api/creators/interest";
+    const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+    function pick() {
+      const fromUrl = new URLSearchParams(location.search).get('lang');
+      if (fromUrl && COPY.languages[fromUrl]) return fromUrl;
+      for (const l of navigator.languages || [navigator.language || 'en']) {
+        const lower = l.toLowerCase();
+        if (lower.startsWith('zh')) return 'zh-Hant';
+        if (lower.startsWith('pt')) return 'pt-BR';
+        const base = lower.split('-')[0];
+        if (COPY.languages[base]) return base;
+      }
+      return 'en';
+    }
+
+    let lang = pick();
+    const langs = document.getElementById('langs');
+    for (const code of COPY.order) {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = COPY.languages[code].languageName;
+      b.lang = code;
+      b.addEventListener('click', () => { lang = code; render(); });
+      langs.appendChild(b);
+    }
+
+    function render() {
+      const t = COPY.languages[lang];
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-t]').forEach((el) => { el.textContent = t[el.dataset.t]; });
+      langs.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', String(b.lang === lang)));
+      document.getElementById('note').hidden = t.reviewed || !t.disclaimer;
+      document.getElementById('noteField').hidden = t.reviewed;
+    }
+    render();
+
+    const form = document.getElementById('form');
+    const error = document.getElementById('error');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const t = COPY.languages[lang];
+      const f = new FormData(form);
+      const v = (k) => String(f.get(k) || '').trim();
+      if (!['name', 'handle', 'country', 'language', 'email'].every(v)) { error.textContent = t.errorFields; return; }
+      if (!EMAIL_RE.test(v('email'))) { error.textContent = t.errorEmail; return; }
+      if (!f.get('consent')) { error.textContent = t.errorConsent; return; }
+      error.textContent = '';
+      const button = form.querySelector('button.submit');
+      button.disabled = true;
+      button.textContent = t.sending;
+      try {
+        const res = await fetch(API, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: v('name'), handle: v('handle'), country: v('country'), language: v('language'), email: v('email'),
+            consent: true, page_language: lang, translation_note: v('translation_note') || undefined,
+            source: 'web', website: v('website') || undefined,
+          }),
+        });
+        if (!res.ok) throw new Error(String(res.status));
+        form.hidden = true;
+        document.getElementById('done').hidden = false;
+      } catch {
+        error.textContent = t.errorGeneric;
+        button.disabled = false;
+        button.textContent = t.submit;
+      }
+    });
+  </script>
+</body>
+</html>

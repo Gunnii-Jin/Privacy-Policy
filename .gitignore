@@ -1,0 +1,9 @@
+# Public site: legal + support pages only. Media lives in the private marketing-media repo.
+*.mp4
+*.mov
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.heic

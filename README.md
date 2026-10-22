@@ -1,28 +1,34 @@
-
 # Legal Documents — TMRW Apps
 
-This repository hosts privacy policies and terms of use for apps published by Kerri Williams (TMRW).
+Public privacy policies, terms and support pages for apps published by TMRW. Nothing else belongs in this repo: marketing media lives in a private repo.
 
-## Findings
+## Field Findings
 Nature identification app (plants, mushrooms, animals, insects).
-📄 [Privacy Policy](https://Gunnii-Jin.github.io/Privacy-Policy/privacyPolicyFieldFindings)
-📄 [Terms of Use](https://Gunnii-Jin.github.io/Privacy-Policy/termsOfServiceFieldFindings.html)
+📄 [Privacy Policy](https://gunnii-jin.github.io/Privacy-Policy/field-findings/privacy.html)
+📄 [Terms of Use](https://gunnii-jin.github.io/Privacy-Policy/field-findings/terms.html)
 
-## Fixation
+## Fixated
 BL manhwa/manga recommendation and community app.
-📄 [Privacy Policy](https://Gunnii-Jin.github.io/Privacy-Policy/privacyPolicyFixated.html)
-📄 [Terms of Use](https://Gunnii-Jin.github.io/Privacy-Policy/termsOfServiceFixated.html)
+📄 [Privacy Policy](https://gunnii-jin.github.io/Privacy-Policy/fixated/privacy.html)
+📄 [Terms of Use](https://gunnii-jin.github.io/Privacy-Policy/fixated/terms.html)
+📄 [Creator Program](https://gunnii-jin.github.io/Privacy-Policy/fixated/creators.html)
 
 ## CyberReady
 Cybersecurity education and CompTIA Security+ exam prep app.
-📄 [Privacy Policy](https://Gunnii-Jin.github.io/Privacy-Policy/privacyPolicyCyberReady.html)
-📄 [Terms of Use](https://Gunnii-Jin.github.io/Privacy-Policy/termsOfServiceCyberReady.html)
+📄 [Privacy Policy](https://gunnii-jin.github.io/Privacy-Policy/cyberready/privacy.html)
+📄 [Terms of Use](https://gunnii-jin.github.io/Privacy-Policy/cyberready/terms.html)
 
 ## Budding
 Gentle wellness and planting app (meal plans, movement, planting, recipes, mood check-ins, gratitude).
-📄 [Privacy Policy](https://Gunnii-Jin.github.io/Privacy-Policy/privacyPolicyBudding.html)
-📄 [Terms of Use](https://Gunnii-Jin.github.io/Privacy-Policy/termsOfServiceBudding.html)
+📄 [Privacy Policy](https://gunnii-jin.github.io/Privacy-Policy/budding/privacy.html)
+📄 [Terms of Use](https://gunnii-jin.github.io/Privacy-Policy/budding/terms.html)
+📄 [Delete Your Account](https://gunnii-jin.github.io/Privacy-Policy/budding/delete-account.html)
+
+## Support
+📄 [Support](https://gunnii-jin.github.io/Privacy-Policy/support.html)
 
 ---
+
+Old flat links (e.g. `privacyPolicyFixated.html`) still work: they redirect to the folders above.
 
 For questions about any of these apps' privacy practices, contact: tmrw.pod@gmail.com
