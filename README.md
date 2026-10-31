@@ -24,6 +24,11 @@ Gentle wellness and planting app (meal plans, movement, planting, recipes, mood 
 📄 [Terms of Use](https://gunnii-jin.github.io/Privacy-Policy/budding/terms.html)
 📄 [Delete Your Account](https://gunnii-jin.github.io/Privacy-Policy/budding/delete-account.html)
 
+## Earth Roots
+Nature, eco-action and community preparedness app.
+📄 [Privacy Policy](https://gunnii-jin.github.io/Privacy-Policy/earth-roots/privacy.html)
+📄 [Terms of Use](https://gunnii-jin.github.io/Privacy-Policy/earth-roots/terms.html)
+
 ## Support
 📄 [Support](https://gunnii-jin.github.io/Privacy-Policy/support.html)
 
